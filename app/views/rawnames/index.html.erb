@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Rawnames</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>System</th>
+      <th>System name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @rawnames.each do |rawname| %>
+      <tr>
+        <td><%= rawname.system_id %></td>
+        <td><%= rawname.system_name %></td>
+        <td><%= link_to 'Show', rawname %></td>
+        <td><%= link_to 'Edit', edit_rawname_path(rawname) %></td>
+        <td><%= link_to 'Destroy', rawname, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Rawname', new_rawname_path %>

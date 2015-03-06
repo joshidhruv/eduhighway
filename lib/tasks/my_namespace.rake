@@ -13,10 +13,19 @@ namespace :my_namespace do
 	
 	@raw_data.each do |array|
 		@datum = Datum.new
-		@datum.solar_name = array[:solar_system_id]	
-		@datum.ship_jumps = array[:ship_jumps]
-		@datum.date = @date
-		@datum.save
+		found = Rawname.where(:system_id => "array[:solar_system_id]")
+		puts found.inspect
+		if found
+				@datum.solar_name = found.system_name
+				@datum.ship_jumps = array[:ship_jumps]
+				@datum.date = @date
+				@datum.save
+		else
+				@datum.solar_name = array[:solar_system_id]
+				@datum.ship_jumps = array[:ship_jumps]
+				@datum.date = @date
+				@datum.save
+		end
 	end
   end
 end

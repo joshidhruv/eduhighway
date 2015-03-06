@@ -5,3 +5,19 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+require 'csv'    
+
+location = Rails.root.join('public','solar_systems.csv')
+csv_text = File.read(location)
+csv = CSV.parse(csv_text, :headers => true)
+
+csv.each do |row|
+ 	#.create!(row.to_hash)
+ 	@data = row.to_hash
+ 	@names = Rawname.new
+	@names.system_id = @data["solarSystemID"]
+	@names.system_name = @data["solarSystemName"]
+	@names.save
+	puts @names
+
+end

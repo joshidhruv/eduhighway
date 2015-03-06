@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>System:</strong>
+  <%= @rawname.system_id %>
+</p>
+
+<p>
+  <strong>System name:</strong>
+  <%= @rawname.system_name %>
+</p>
+
+<%= link_to 'Edit', edit_rawname_path(@rawname) %> |
+<%= link_to 'Back', rawnames_path %>

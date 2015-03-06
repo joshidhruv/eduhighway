@@ -1,0 +1,12 @@
+<%= simple_form_for(@rawname) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :system_id %>
+    <%= f.input :system_name %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
