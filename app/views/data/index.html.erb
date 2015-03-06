@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Data</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Solar name</th>
+      <th>Ship jumps</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @data.each do |datum| %>
+      <tr>
+        <td><%= datum.solar_name %></td>
+        <td><%= datum.ship_jumps %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

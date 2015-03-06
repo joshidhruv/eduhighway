@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Solar name:</strong>
+  <%= @datum.solar_name %>
+</p>
+
+<p>
+  <strong>Ship jumps:</strong>
+  <%= @datum.ship_jumps %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @datum.date %>
+</p>
+
+<%= link_to 'Edit', edit_datum_path(@datum) %> |
+<%= link_to 'Back', data_path %>
