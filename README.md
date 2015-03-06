@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Edusuper
 
 ## Getting Started
@@ -30,3 +31,7 @@ programming in style.
 * [Protocol](http://github.com/thoughtbot/guides/blob/master/protocol)
 * [Best Practices](http://github.com/thoughtbot/guides/blob/master/best-practices)
 * [Style](http://github.com/thoughtbot/guides/blob/master/style)
+=======
+# eduhighway
+Education_super_Highway Test Demo app. Ruby on Rails / Postgresql
+>>>>>>> 04c47479b9d8b2a614016263120b14b8ca29ccb1
