@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Edusuper
 
 ## Getting Started
@@ -31,7 +31,19 @@ programming in style.
 * [Protocol](http://github.com/thoughtbot/guides/blob/master/protocol)
 * [Best Practices](http://github.com/thoughtbot/guides/blob/master/best-practices)
 * [Style](http://github.com/thoughtbot/guides/blob/master/style)
-=======
+
 # eduhighway
 Education_super_Highway Test Demo app. Ruby on Rails / Postgresql
->>>>>>> 04c47479b9d8b2a614016263120b14b8ca29ccb1
+
+Steps:
+
+1) rake db:create
+2) rake db:migtrate
+3) To get CSV data to DB
+-> rake db:seed
+4) To download api information 
+-> rake my_namespace:download_data
+5) I alsmost finish the 1st step. My searching algorithm is not quite fast to match the name with ID and replace it.
+
+Thank you.
+Dhruv
