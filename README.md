@@ -37,13 +37,13 @@ Education_super_Highway Test Demo app. Ruby on Rails / Postgresql
 
 Steps:
 
-1) rake db:create
-2) rake db:migtrate
-3) To get CSV data to DB
--> rake db:seed
-4) To download api information 
--> rake my_namespace:download_data
-5) I alsmost finish the 1st step. My searching algorithm is not quite fast to match the name with ID and replace it.
+#1) rake db:create
+#2) rake db:migtrate
+#3) To get CSV data to DB
+#   -> rake db:seed
+#4) To download api information 
+#    -> rake my_namespace:download_data
+#5) I alsmost finish the 1st step. My searching algorithm is not quite fast to match the name with ID and replace it.
 
-Thank you.
-Dhruv
+#Thank you.
+#Dhruv
